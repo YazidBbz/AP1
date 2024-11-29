@@ -1,0 +1,180 @@
+/* style.css */
+
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Formulaire centré */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input,
+form button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #b6c6d8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+form button {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #003f7f;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #8855b1;
+}
+
+/* Liens spécifiques pour mot de passe oublié et inscription */
+a.special {
+    color: #8e44ad; /* Violet */
+    font-weight: bold;
+    text-decoration: underline; /* Surlignage */
+    transition: color 0.3s ease;
+}
+
+a.special:hover {
+    color: #6c3483; /* Violet plus sombre au survol */
+    text-decoration: none; /* Supprime le surlignage au survol */
+}
+
+/* Styles généraux */
+body.accueil {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #74b9ff, #a29bfe);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Conteneur principal */
+div {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Titres */
+h1, h2 {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Liens */
+a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #74b9ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #81ecec;
+}
+
+/* Bouton de déconnexion */
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #d63031;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e17055;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    div {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
